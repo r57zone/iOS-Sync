@@ -131,6 +131,7 @@ FDevice.GetDirectories(AnsiToUTF8(address),DirList);
 for i:=0 to DirList.Count - 1 do begin
 Item:=ListView1.Items.Add;
 Item.Caption:=StringReplace(UTF8ToAnsi(DirList.Strings[i]),'è?','é',[rfreplaceall]);
+Item.Caption:=StringReplace(Item.Caption,'È?','É',[rfreplaceall]);
 //Item.SubItems.Add(UTF8ToAnsi(DirList.Strings[i]));
 Item.SubItems.Add('');
 Item.ImageIndex:=2;
@@ -140,6 +141,7 @@ FDevice.GetFiles(AnsiToUTF8(address),DirList);
 for i:=0 to DirList.Count - 1 do begin
 Item :=ListView1.Items.Add;
 Item.Caption:=StringReplace(DirList.Strings[i],'è?','é',[rfreplaceall]);
+Item.Caption:=StringReplace(Item.Caption,'È?','É',[rfreplaceall]);
 //Item.SubItems.Add(DirList.Strings[i]);
 Item.SubItems.Add('');
 Item.ImageIndex:=4;
