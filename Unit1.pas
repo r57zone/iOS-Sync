@@ -257,6 +257,7 @@ delete(fileindex,1,1);
 if path<>'/' then
 if Form1.FDevice.Exists(AnsiToUtf8(path+'/'+ExtractFileName(fileindex))) then
 if Form1.FDevice.DeleteFile(AnsiToUtf8(path+'/'+ExtractFileName(fileindex))) then begin
+if length(fileindex)>27 then fileindex:=copy(fileindex,1,27)+'...';
 StatusBar1.SimpleText:=' Файл "'+fileindex+'" удален'; Dir(path); end else StatusBar1.SimpleText:=' Невозможно удалить файл "'+fileindex+'"';
 end;
 if (fileindex[1]='2') then begin
