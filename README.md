@@ -10,7 +10,7 @@ iOS Sync - Файловый менеджер iOS для Windows.
 
 Обратная связь: r57zone[собака]gmail.com
 
-* Программа частично поддерживает [стандарт модульных программ](https://github.com/r57zone/Standard-modular-program).
+Программа частично поддерживает [стандарт модульных программ](https://github.com/r57zone/Standard-modular-program).
 
 <h2>EN:</h2>
 iOS Sync - iOS File Manager for Windows.
@@ -24,4 +24,4 @@ The path to the default folder is edited in config.ini. Tested on iOS 6.1.
 
 Feedback: r57zone[dog]gmail.com
 
-* The program partially supports [standard modular programs](https://github.com/r57zone/Standard-modular-program).
+The program partially supports [standard modular programs](https://github.com/r57zone/Standard-modular-program).
