@@ -418,7 +418,7 @@ AMobileFile:TAMobileDeviceFileStream;
 LocalFile:TFileStream;
 begin
 RemoteFileSize:=Form1.FDevice.GetFileSize(Address);
-LocalFile:=TFileStream.Create(LocalPath+'\'+ExtractFileName(StringReplace(Address,'/','\',[rfReplaceAll])),fmCreate);
+LocalFile:=TFileStream.Create(LocalPath+'\'+UTF8ToAnsi(ExtractFileName(StringReplace(Address,'/','\',[rfReplaceAll]))),fmCreate);
 try
 AMobileFile:=TAMobileDeviceFileStream.Create(Form1.FDevice,Address,omRead);
 AMobileFile.OnProgressStep:=Form1.DoOnFileTransStep;
