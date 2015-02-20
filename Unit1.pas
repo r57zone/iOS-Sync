@@ -134,17 +134,23 @@ FDevice.GetDirectories(AnsiToUTF8(Address),DirList);
 
 for i:=0 to DirList.Count-1 do begin
 Item:=ListView1.Items.Add;
-Item.Caption:=StringReplace(UTF8ToAnsi(DirList.Strings[i]),'è?','é',[rfReplaceAll]);
+Item.Caption:=UTF8ToAnsi(DirList.Strings[i]);
+Item.Caption:=StringReplace(Item.Caption,'è?','é',[rfReplaceAll]);
 Item.Caption:=StringReplace(Item.Caption,'È?','É',[rfReplaceAll]);
+Item.Caption:=StringReplace(Item.Caption,'å?','¸',[rfReplaceAll]);
+Item.Caption:=StringReplace(Item.Caption,'Å?','¨',[rfReplaceAll]);
 //Item.SubItems.Add('');
 Item.ImageIndex:=2;
 end;
 DirList.Clear;
 FDevice.GetFiles(AnsiToUTF8(Address),DirList);
 for i:=0 to DirList.Count-1 do begin
-Item :=ListView1.Items.Add;
-Item.Caption:=StringReplace(DirList.Strings[i],'è?','é',[rfReplaceAll]);
+Item:=ListView1.Items.Add;
+Item.Caption:=DirList.Strings[i];
+Item.Caption:=StringReplace(Item.Caption,'è?','é',[rfReplaceAll]);
 Item.Caption:=StringReplace(Item.Caption,'È?','É',[rfReplaceAll]);
+Item.Caption:=StringReplace(Item.Caption,'å?','¸',[rfReplaceAll]);
+Item.Caption:=StringReplace(Item.Caption,'Å?','¨',[rfReplaceAll]);
 //Item.SubItems.Add('');
 Item.SubItems.Add('');
 Item.ImageIndex:=4;
