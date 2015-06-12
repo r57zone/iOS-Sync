@@ -22,6 +22,6 @@ The path to the default folder is edited in config.ini. Tested on iOS 6.1.
 
 **[Download the latest version](https://github.com/r57zone/iOS-Sync/releases)**
 
-**Feedback:** r57zone[dog]gmail.com
+**Feedback:** r57zone[at]gmail.com
 
 The program partially supports [standard modular programs](https://github.com/r57zone/Standard-modular-program).
