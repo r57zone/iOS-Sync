@@ -28,6 +28,8 @@ type
     procedure StatusBar1Click(Sender: TObject);
     procedure N3Click(Sender: TObject);
     procedure N4Click(Sender: TObject);
+    procedure ListView1KeyDown(Sender: TObject; var Key: Word;
+      Shift: TShiftState);
   protected
     procedure WMDropFiles (var Msg: TMessage); message wm_DropFiles;
   private
@@ -484,6 +486,20 @@ if DownloadDir(AnsiToUtf8(Path+'/'+FileIndex),TempPath) then StatusBar1.SimpleTe
 StatusBar1.SimpleText:=' В процессе копирования произошла ошибка';
 end;
 end else StatusBar1.SimpleText:=' Не выбран каталог';
+end;
+
+procedure TForm1.ListView1KeyDown(Sender: TObject; var Key: Word;
+  Shift: TShiftState);
+begin
+if ListView1.ItemIndex<>-1 then begin
+if Key=13 then begin
+case ListView1.Items[ListView1.ItemIndex].ImageIndex of
+1: Dir('/');
+0: if Path<>'/' then begin Delete(Path,pos(ExtractFileName(StringReplace(Path,'/','\',[rfReplaceAll])),Path)-1,length(ExtractFileName(StringReplace(Path,'/','\',[rfReplaceAll])))+1); Dir(Path); end;
+2: if Path='/' then Dir(Path+ListView1.Items[ListView1.ItemIndex].Caption) else Dir(Path+'/'+ListView1.Items[ListView1.ItemIndex].Caption);
+end;
+end;
+end;
 end;
 
 end.
