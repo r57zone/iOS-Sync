@@ -390,7 +390,8 @@ var
 NewName:string;
 begin
 if (FileIndex[1]<>'0') and (FileIndex[1]<>'1') then Delete(FileIndex,1,1);
-if InputQuery(Application.Title, 'Введите новое название для '+FileIndex, NewName) then
+NewName:=FileIndex;
+if InputQuery(Application.Title, 'Введите новое имя файла', NewName) then
 if Trim(NewName)<>'' then begin
 if FDevice.Rename(AnsiToUtf8(Path+'/'+FileIndex),AnsiToUtf8(Path+'/'+NewName)) then StatusBar1.SimpleText:=' Название успешно изменено' else StatusBar1.SimpleText:=' Название не удалось изменить';
 Dir(Path);
