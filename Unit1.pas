@@ -259,9 +259,9 @@ inc(Count);
 
 StatusBar1.SimpleText:=' Идет копирование файлов ('+IntToStr(i+1)+' из '+IntToStr(Amount)+')';
 
-if FileExists(StrPas(Filename)) then begin
+if FileExists(StrPas(Filename)) and (pos('?',StrPas(Filename))=0) then begin
 if UploadFile(StrPas(Filename),Path) then inc(GoodCount); end else
-if DirectoryExists(StrPas(Filename)) then if UploadDir(StrPas(Filename)+'\',Path) then inc(GoodCount);
+if DirectoryExists(StrPas(Filename)) and (pos('?',StrPas(Filename))=0) then if UploadDir(StrPas(Filename)+'\',Path) then inc(GoodCount);
 
 StrDispose(Filename);
 end;
@@ -337,7 +337,7 @@ end;
 
 procedure TForm1.StatusBar1Click(Sender: TObject);
 begin
-Application.MessageBox('iOS Sync 0.3.1'+#13#10+'https://github.com/r57zone'+#13#10+'Последнее обновление: 03.07.2015','О программе...',0);
+Application.MessageBox('iOS Sync 0.3.1'+#13#10+'https://github.com/r57zone'+#13#10+'Последнее обновление: 24.09.2015','О программе...',0);
 end;
 
 procedure SendMessageToHandle(TRGWND:hwnd;MsgToHandle:string);
