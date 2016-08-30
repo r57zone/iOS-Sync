@@ -1,7 +1,7 @@
 <h2>RU:</h2>
 **iOS Sync** - Файловый менеджер iOS для Windows. 
 
-![untitled-1](https://cloud.githubusercontent.com/assets/9499881/5958933/2fd7c990-a7e3-11e4-8ef7-c9a88fb79b4d.png)
+![](https://cloud.githubusercontent.com/assets/9499881/18104172/dc25205e-6f0a-11e6-8c57-f26516f9a1a7.png)
 
 Главной особенностью является возможность быстрой загрузки, с помощью "drag and drop", необходимых файлов в приложение.
 Путь до папки по умолчанию редактируется в config.ini. Проверено на iOS 6.1 iTunes 11.3.0.54.
