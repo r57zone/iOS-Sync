@@ -495,11 +495,13 @@ end;
 procedure TForm1.ListView1KeyDown(Sender: TObject; var Key: Word;
   Shift: TShiftState);
 begin
-  if Key=13 then begin
-    case ListView1.Items[ListView1.ItemIndex].ImageIndex of
-      1: Dir('/');
-      0: if Path<>'/' then begin Delete(Path,pos(ExtractFileName(StringReplace(Path,'/','\',[rfReplaceAll])),Path)-1,length(ExtractFileName(StringReplace(Path,'/','\',[rfReplaceAll])))+1); Dir(Path); end;
-      2: if Path='/' then Dir(Path+ListView1.Items[ListView1.ItemIndex].Caption) else Dir(Path+'/'+ListView1.Items[ListView1.ItemIndex].Caption);
+  if ListView1.ItemIndex<>-1 then begin
+    if Key=13 then begin
+      case ListView1.Items[ListView1.ItemIndex].ImageIndex of
+        1: Dir('/');
+        0: if Path<>'/' then begin Delete(Path,pos(ExtractFileName(StringReplace(Path,'/','\',[rfReplaceAll])),Path)-1,length(ExtractFileName(StringReplace(Path,'/','\',[rfReplaceAll])))+1); Dir(Path); end;
+        2: if Path='/' then Dir(Path+ListView1.Items[ListView1.ItemIndex].Caption) else Dir(Path+'/'+ListView1.Items[ListView1.ItemIndex].Caption);
+      end;
     end;
   end;
 end;
