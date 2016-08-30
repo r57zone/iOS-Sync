@@ -36,7 +36,6 @@ object Form1: TForm1
     ParentFont = False
     ShowColumnHeaders = False
     SmallImages = ImageList1
-    StateImages = ImageList1
     TabOrder = 0
     ViewStyle = vsReport
     OnKeyDown = ListView1KeyDown

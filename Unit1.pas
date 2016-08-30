@@ -340,7 +340,7 @@ end;
 
 procedure TForm1.StatusBar1Click(Sender: TObject);
 begin
-  Application.MessageBox('iOS Sync 0.3.1'+#13#10+'https://github.com/r57zone'+#13#10+'Последнее обновление: 24.09.2015','О программе...',0);
+  Application.MessageBox('iOS Sync 0.3.2'+#13#10+'Последнее обновление: 30.08.2016'+#13#10+'http://r57zone.github.io'+#13#10+'r57zone@gmail.com','О программе...',0);
 end;
 
 procedure SendMessageToHandle(TRGWND:hwnd;MsgToHandle:string);
@@ -495,13 +495,11 @@ end;
 procedure TForm1.ListView1KeyDown(Sender: TObject; var Key: Word;
   Shift: TShiftState);
 begin
-  if ListView1.ItemIndex<>-1 then begin
-    if Key=13 then begin
-      case ListView1.Items[ListView1.ItemIndex].ImageIndex of
-        1: Dir('/');
-        0: if Path<>'/' then begin Delete(Path,pos(ExtractFileName(StringReplace(Path,'/','\',[rfReplaceAll])),Path)-1,length(ExtractFileName(StringReplace(Path,'/','\',[rfReplaceAll])))+1); Dir(Path); end;
-        2: if Path='/' then Dir(Path+ListView1.Items[ListView1.ItemIndex].Caption) else Dir(Path+'/'+ListView1.Items[ListView1.ItemIndex].Caption);
-      end;
+  if Key=13 then begin
+    case ListView1.Items[ListView1.ItemIndex].ImageIndex of
+      1: Dir('/');
+      0: if Path<>'/' then begin Delete(Path,pos(ExtractFileName(StringReplace(Path,'/','\',[rfReplaceAll])),Path)-1,length(ExtractFileName(StringReplace(Path,'/','\',[rfReplaceAll])))+1); Dir(Path); end;
+      2: if Path='/' then Dir(Path+ListView1.Items[ListView1.ItemIndex].Caption) else Dir(Path+'/'+ListView1.Items[ListView1.ItemIndex].Caption);
     end;
   end;
 end;
