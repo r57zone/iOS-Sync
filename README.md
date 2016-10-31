@@ -7,7 +7,7 @@
 Работает с iOS 6.1 и iTunes 11.3.0.54.<br>
 
 ## Скриншоты
-![](https://cloud.githubusercontent.com/assets/9499881/18104172/dc25205e-6f0a-11e6-8c57-f26516f9a1a7.png)
+![](https://cloud.githubusercontent.com/assets/9499881/19869945/dbf4b278-9fc7-11e6-8fb1-849bf05f5b94.png)
 
 ## Загрузка
 >Версия для Windows<br>
@@ -25,10 +25,11 @@ The path to the default folder is edited in config.ini.<br>
 Work on iOS 6.1 with iTunes 11.3.0.54. 
 
 ## Screenshots
-![](https://cloud.githubusercontent.com/assets/9499881/5959586/e85696a4-a7e8-11e4-9005-e8fab3b3f23c.png)
+![](https://cloud.githubusercontent.com/assets/9499881/19869946/dc244ab0-9fc7-11e6-9a09-b18552e9a82b.png)
 
 ## Download
 >For Windows<br>
+>If you need a program with an English translation, please write to email and I'll will build it soon.<br>
 **[Download](https://github.com/r57zone/iOS-Sync/releases)**<br>
 
 ## Feedback
