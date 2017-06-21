@@ -401,7 +401,7 @@ begin
     end else StatusBar1.SimpleText:=' Неверно задано название';
 end;
 
-function BrowseFolderDialog(title:PChar):string;
+function BrowseFolderDialog(title:PChar): string;
 var
   TitleName: string;
   lpItemid: pItemIdList;
@@ -423,7 +423,7 @@ begin
   end;
 end;
 
-function DownloadFile(Address,LocalPath:string):boolean;
+function DownloadFile(Address,LocalPath:string): boolean;
 var
   RemoteFileSize: int64;
   AMobileFile: TAMobileDeviceFileStream;
@@ -444,7 +444,7 @@ begin
   end;
 end;
 
-function DownloadDir(Address,LocalPath:string):boolean;
+function DownloadDir(Address,LocalPath:string): boolean;
 var
   DirList: TStringList; i: integer;
 begin
