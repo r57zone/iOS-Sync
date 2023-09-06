@@ -1,22 +1,7 @@
-# iOS Sync (Ru)
-Файловый менеджер iOS для Windows. Приложение частично поддерживает [стандарт модульных программ](https://github.com/r57zone/Standard-modular-program).
+[![EN](https://user-images.githubusercontent.com/9499881/33184537-7be87e86-d096-11e7-89bb-f3286f752bc6.png)](https://github.com/r57zone/iOS-Sync/) 
+[![RU](https://user-images.githubusercontent.com/9499881/27683795-5b0fbac6-5cd8-11e7-929c-057833e01fb1.png)](https://github.com/r57zone/iOS-Sync/blob/master/README.RU.md)
 
-## Особенности
-Главной особенностью является возможность быстрой загрузки файлов, с помощью "drag and drop", в приложение.<br>
-Путь до папки по умолчанию редактируется в config.ini.<br>
-Работает с iOS 6.1 и iTunes 11.3.0.54.<br>
-
-## Скриншоты
-![](https://cloud.githubusercontent.com/assets/9499881/19869945/dbf4b278-9fc7-11e6-8fb1-849bf05f5b94.png)
-
-## Загрузка
->Версия для Windows<br>
-**[Загрузить](https://github.com/r57zone/iOS-Sync/releases)**<br>
-
-## Обратная связь
-`r57zone[собака]gmail.com`
-
-# iOS Sync (En)
+# iOS Sync
 iOS File Manager for Windows. Application partially support [standard modular programs](https://github.com/r57zone/Standard-modular-program).
 
 ## Features
@@ -28,9 +13,9 @@ Work on iOS 6.1 with iTunes 11.3.0.54.
 ![](https://cloud.githubusercontent.com/assets/9499881/19869946/dc244ab0-9fc7-11e6-9a09-b18552e9a82b.png)
 
 ## Download
->For Windows<br>
->If you need a program with an English translation, please write to email and I'll will build it soon.<br>
-**[Download](https://github.com/r57zone/iOS-Sync/releases)**<br>
+>Version for Windows XP, 7, 8.1, 10, 11.
+
+**[Download](https://github.com/r57zone/iOS-Sync/releases)**
 
 ## Feedback
 `r57zone[at]gmail.com`

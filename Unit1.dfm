@@ -18,7 +18,7 @@ object Form1: TForm1
   OnCreate = FormCreate
   PixelsPerInch = 96
   TextHeight = 13
-  object ListView1: TListView
+  object ListView: TListView
     Left = 8
     Top = 8
     Width = 321
@@ -38,8 +38,8 @@ object Form1: TForm1
     SmallImages = ImageList1
     TabOrder = 0
     ViewStyle = vsReport
-    OnKeyDown = ListView1KeyDown
-    OnMouseDown = ListView1MouseDown
+    OnKeyDown = ListViewKeyDown
+    OnMouseDown = ListViewMouseDown
   end
   object StatusBar1: TStatusBar
     Left = 0
@@ -465,24 +465,27 @@ object Form1: TForm1
   object PopupMenu1: TPopupMenu
     Left = 176
     Top = 8
-    object N1: TMenuItem
-      Caption = #1057#1086#1079#1076#1072#1090#1100' '#1087#1072#1087#1082#1091
-      OnClick = N1Click
+    object CopyBtn: TMenuItem
+      Caption = #1050#1086#1087#1080#1088#1086#1074#1072#1090#1100
+      OnClick = CopyBtnClick
+    end
+    object RenameBtn: TMenuItem
+      Caption = #1055#1077#1088#1077#1080#1084#1077#1085#1086#1074#1072#1090#1100
+      OnClick = RenameBtnClick
+    end
+    object RemoveBtn: TMenuItem
+      Caption = #1059#1076#1072#1083#1080#1090#1100
+      OnClick = RemoveBtnClick
     end
     object N2: TMenuItem
       Caption = '-'
     end
-    object N4: TMenuItem
-      Caption = #1050#1086#1087#1080#1088#1086#1074#1072#1090#1100
-      OnClick = N4Click
-    end
-    object N3: TMenuItem
-      Caption = #1055#1077#1088#1077#1080#1084#1077#1085#1086#1074#1072#1090#1100
-      OnClick = N3Click
-    end
-    object N11: TMenuItem
-      Caption = #1059#1076#1072#1083#1080#1090#1100
-      OnClick = N11Click
+    object CreateBtn: TMenuItem
+      Caption = #1057#1086#1079#1076#1072#1090#1100
+      object CreateFolderBtn: TMenuItem
+        Caption = #1055#1072#1087#1082#1091
+        OnClick = CreateFolderBtnClick
+      end
     end
   end
 end
